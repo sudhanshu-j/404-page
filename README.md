@@ -151,7 +151,7 @@ Optimized for a full range of devices:
 
 ## 🙌 Credits
 
-Developed by **[Your Name](https://github.com/sudhanshu-j)** 💙  
+Developed by **[Sudhanshu Jha](https://github.com/sudhanshu-j)** 💙  
 Thanks to the following open-source tools:
 
 - [GSAP](https://greensock.com/gsap/)
