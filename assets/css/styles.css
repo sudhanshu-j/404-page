@@ -1,0 +1,487 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+/* Imports the 'Space Grotesk' font from Google Fonts with weight range from 300 to 700 */
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem; /* Height of the header */
+
+  /*========== Colors ==========*/
+  --white-color: hsl(0, 0%, 96%); /* Light white shade for backgrounds */
+  --black-color: hsl(0, 0%, 0%); /* Pure black color */
+
+  /*========== Font and typography ==========*/
+  --body-font: "Space Grotesk", sans-serif; /* Base font */
+  --biggest-font-size: 3rem; /* Initial biggest font size */
+  --normal-font-size: 0.938rem; /* Standard body font size */
+
+  /*========== Font weight ==========*/
+  --font-regular: 400; /* Regular font weight */
+  --font-bold: 700; /* Bold font weight */
+
+  /*========== z index ==========*/
+  --z-tooltip: 10; /* For tooltip layering */
+  --z-fixed: 100; /* For fixed elements like headers */
+}
+
+/* Responsive typography for larger screens */
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 6.5rem; /* Larger title text */
+    --big-font-size: 2rem; /* Larger subtitle text */
+    --normal-font-size: 1rem; /* Slightly increased base font size */
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box; /* Includes padding and border in element's total width/height */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font); /* Use the custom font */
+  font-size: var(--normal-font-size); /* Set default font size */
+  background-color: var(--white-color); /* White background */
+  color: var(--black-color); /* Black text */
+}
+
+ul {
+  list-style: none; /* Remove default bullet points from lists */
+}
+
+a {
+  text-decoration: none; /* Remove underlines from links */
+}
+
+img {
+  display: block; /* Prevent extra space under images */
+  max-width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px; /* Set a max width for content */
+  margin-inline: 1.5rem; /* Horizontal margin on both sides */
+}
+
+.main {
+  overflow: hidden; /* Hide overflowing content (e.g., blobs) */
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+  position: fixed; /* Stick header to the top */
+  width: 100%; /* Full width */
+  top: 0;
+  left: 0;
+  background-color: var(--white-color); /* White background */
+  z-index: var(--z-fixed); /* Ensure it's above other elements */
+  transition: box-shadow 0.5s; /* Smooth shadow transition */
+}
+
+.nav {
+  position: relative;
+  height: var(--header-height); /* Header height */
+  display: flex;
+  justify-content: space-between; /* Space between logo and menu */
+  align-items: center; /* Center vertically */
+}
+
+.nav-logo {
+  color: var(--black-color); /* Logo text color */
+  font-weight: var(--font-bold); /* Bold logo */
+}
+
+.nav-toggle,
+.nav-close {
+  font-size: 1.5rem; /* Icon size */
+  cursor: pointer; /* Cursor becomes a pointer */
+}
+
+/* Navigation styles for mobile */
+@media screen and (max-width: 1150px) {
+  .nav-menu {
+    position: fixed; /* Fixed menu for mobile */
+    top: -100%; /* Hide menu initially */
+    left: 0;
+    background-color: var(--white-color);
+    width: 100%;
+    padding-block: 4.5rem; /* Vertical padding */
+    box-shadow: 0 8px 16px hsla(0, 0%, 0%, 0.2); /* Drop shadow */
+    transition: top 0.5s; /* Smooth slide animation */
+  }
+}
+
+.nav-list {
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+  row-gap: 1.5rem; /* Space between items */
+}
+
+.nav-link {
+  color: var(--black-color); /* Link color */
+  font-weight: var(--font-bold); /* Bold links */
+}
+
+.nav-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.nav-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem; /* Position close icon in the corner */
+}
+
+/* Show mobile menu when active */
+.show-menu {
+  top: 0; /* Slide down the nav menu */
+}
+
+/* Shadow effect on scroll */
+.scroll-header {
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.2);
+}
+
+/*=============== HOME ===============*/
+.h-container {
+  padding-top: 7.5rem; /* Space below fixed header */
+  height: 100vh; /* Full viewport height */
+  display: grid;
+  grid-template-rows: max-content 320px; /* Two rows: content and image area */
+  row-gap: 2rem; /* Gap between rows */
+}
+
+.h-data {
+  text-align: center; /* Center all text */
+}
+
+.h-subtitle {
+  font-size: var(--normal-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.h-title {
+  font-size: var(--biggest-font-size);
+  -webkit-text-stroke: 5px var(--black-color); /* Stroke around text */
+  color: var(--white-color); /* White fill */
+  paint-order: stroke; /* Stroke under fill */
+  filter: drop-shadow(-4px 4px 0 var(--black-color)); /* Offset shadow */
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.h-description {
+  padding-inline: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.h-button {
+  display: inline-flex;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-weight: var(--font-bold);
+  padding: 1rem 1.5rem;
+  transition: box-shadow 0.5s;
+}
+
+.h-button:hover {
+  box-shadow: 0 8px 32px hsla(0, 0%, 0%, 0.3); /* Glow effect on hover */
+}
+
+.h-images {
+  position: relative;
+}
+
+/* Generic blob styles */
+.h-images .h-blob {
+  background-color: var(--black-color);
+  position: absolute;
+}
+
+/* Position images inside blobs */
+.h-images .h-img {
+  position: absolute;
+}
+
+/* Blob 1 styles */
+.h-blob-1 {
+  width: 150px;
+  height: 180px;
+  border-radius: 38% 62% 66% 34%/60% 41% 59% 40%; /* Irregular shape */
+  top: -2rem;
+  left: -4rem;
+  animation: blob-1 5s linear infinite; /* Animate shape */
+}
+
+.h-img-1 {
+  width: 100px;
+  top: 0.75rem;
+  right: 1rem;
+}
+
+/* Blob 2 */
+.h-blob-2 {
+  width: 200px;
+  height: 195px;
+  border-radius: 59% 41% 19% 81%/34% 72% 28% 66%;
+  top: -8rem;
+  right: -8.5rem;
+  animation: blob-2 5s linear infinite;
+}
+
+.h-img-2 {
+  width: 120px;
+  bottom: 5rem;
+  left: 0;
+}
+
+/* Blob 3 */
+.h-blob-3 {
+  width: 200px;
+  height: 190px;
+  border-radius: 57% 43% 40% 60%/49% 34% 66% 51%;
+  left: -5rem;
+  bottom: -4.5rem;
+  animation: blob-3 5s linear infinite;
+}
+
+.h-img-3 {
+  width: 100px;
+  top: 1rem;
+  right: 2rem;
+}
+
+/* Blob 4 */
+.h-blob-4 {
+  width: 300px;
+  height: 290px;
+  border-radius: 78% 22% 20% 80%/53% 46% 54% 47%;
+  right: -9rem;
+  bottom: -4rem;
+  animation: blob-4 5s linear infinite;
+}
+
+.h-img-4 {
+  width: 200px;
+  left: -1rem;
+  bottom: 1rem;
+}
+
+/* UFO image */
+.h-img-5 {
+  width: 150px;
+  left: 0;
+  right: -4rem;
+  margin: 0 auto;
+  top: 1rem;
+  rotate: 15deg;
+  z-index: -1; /* Behind other images */
+}
+
+/*=============== ANIMATIONS ===============*/
+@keyframes blob-1 {
+  /* Animated morphing shape */
+  0%,
+  100% {
+    border-radius: 38% 62% 66% 34%/60% 41% 59% 40%;
+  }
+  33% {
+    border-radius: 59% 41% 55% 45%/64% 22% 78% 36%;
+  }
+  66% {
+    border-radius: 59% 41% 35% 65%/46% 67% 33% 54%;
+  }
+}
+
+@keyframes blob-2 {
+  0%,
+  100% {
+    border-radius: 59% 41% 19% 81%/34% 72% 28% 66%;
+  }
+  33% {
+    border-radius: 78% 22% 20% 80%/53% 46% 54% 47%;
+  }
+  66% {
+    border-radius: 57% 43% 40% 60%/49% 34% 66% 51%;
+  }
+}
+
+@keyframes blob-3 {
+  0%,
+  100% {
+    border-radius: 57% 43% 40% 60%/49% 34% 66% 51%;
+  }
+  33% {
+    border-radius: 51% 49% 30% 70%/37% 63% 37% 63%;
+  }
+  66% {
+    border-radius: 51% 49% 28% 72%/77% 75% 25% 23%;
+  }
+}
+
+@keyframes blob-4 {
+  0%,
+  100% {
+    border-radius: 78% 22% 20% 80%/53% 46% 54% 47%;
+  }
+  33% {
+    border-radius: 65% 35% 42% 58%/64% 28% 72% 36%;
+  }
+  66% {
+    border-radius: 32% 68% 46% 54%/29% 22% 78% 71%;
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For extra small devices */
+@media screen and (max-width: 320px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .h-container {
+    grid-template-columns: max-content 265px;
+  }
+
+  .h-images .h-blob,
+  .h-img-5 {
+    scale: 0.7; /* Shrink blobs and UFO */
+  }
+
+  .h-title {
+    font-size: 2rem;
+  }
+
+  .h-description {
+    padding: 0;
+  }
+}
+
+/* Handle short screens */
+@media screen and (max-width: 400px) and (max-height: 650px),
+  screen and (min-width: 400px) and (max-height: 700px) {
+  .h-container {
+    height: initial;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 540px) {
+  .h-container {
+    grid-template-columns: 400px;
+    justify-content: center;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1150px) {
+  .container {
+    margin-inline: auto;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 2rem); /* Increase nav height */
+  }
+
+  .nav-toggle,
+  .nav-close {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+
+  .h-container {
+    grid-template-columns: 1fr;
+    padding-top: 10rem;
+  }
+
+  .h-subtitle {
+    font-size: var(--big-font-size);
+  }
+
+  .h-title {
+    -webkit-text-stroke-width: 8px;
+    filter: drop-shadow(-8px 8px 0 var(--black-color));
+  }
+
+  .h-description {
+    width: 400px;
+    margin: 0 auto 3.5rem;
+  }
+
+  /* Adjust all blob sizes and positions for larger screens */
+  .h-blob-1 {
+    width: 220px;
+    height: 260px;
+    top: -20rem;
+    left: -1rem;
+  }
+
+  .h-img-1 {
+    width: 180px;
+  }
+
+  .h-blob-2 {
+    width: 360px;
+    height: 355px;
+    top: -27rem;
+  }
+
+  .h-img-2 {
+    width: 280px;
+  }
+
+  .h-blob-3 {
+    width: 500px;
+    height: 485px;
+    bottom: -11rem;
+  }
+
+  .h-img-3 {
+    width: 250px;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+  }
+
+  .h-blob-4 {
+    width: 500px;
+    height: 485px;
+    right: -7rem;
+    bottom: -12rem;
+  }
+
+  .h-img-4 {
+    width: 450px;
+    left: -2rem;
+    bottom: 3rem;
+  }
+
+  .h-img-5 {
+    width: 250px;
+    right: 0;
+    top: 9rem;
+  }
+}
+
+/* For tall devices */
+@media screen and (min-width: 390px) and (min-height: 900px) {
+  .h-container {
+    padding-top: 10rem;
+  }
+}
+
+@media screen and (min-width: 800px) and (min-height: 1200px) {
+  .h-container {
+    padding-top: 15rem;
+  }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- Declares the document type and version of HTML -->
+<html lang="en">
+  <!-- Sets the language of the document to English -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Sets the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Makes the website responsive on different screen sizes -->
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Adds a favicon (icon shown in browser tab) -->
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+    <!-- Includes the Remix Icon library for using icons -->
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Links external CSS styles -->
+
+    <title>Responsive 404 page website</title>
+    <!-- Sets the title of the webpage shown in the browser tab -->
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <!-- Defines the header section -->
+      <nav class="nav container">
+        <!-- Navigation bar with container class for layout -->
+        <a href="#" class="nav-logo"> XCOMPANY </a>
+        <!-- Logo or brand link -->
+
+        <div class="nav-menu" id="nav-menu">
+          <!-- Menu container for navigation links -->
+          <ul class="nav-list">
+            <!-- List of navigation items -->
+            <li>
+              <a href="#" class="nav-link"> HOME </a>
+              <!-- Navigation link to Home -->
+            </li>
+            <li>
+              <a href="#" class="nav-link"> ABOUT US </a>
+              <!-- Link to About Us page -->
+            </li>
+            <li>
+              <a href="#" class="nav-link"> COMMUNITY </a>
+              <!-- Link to Community page -->
+            </li>
+            <li>
+              <a href="#" class="nav-link"> NEWS </a>
+              <!-- Link to News page -->
+            </li>
+            <li>
+              <a href="#" class="nav-link"> CONTACT </a>
+              <!-- Link to Contact page -->
+            </li>
+          </ul>
+
+          <div class="nav-close" id="nav-close">
+            <!-- Close icon to hide the menu (for mobile) -->
+            <i class="ri-close-large-line"></i>
+            <!-- RemixIcon close icon -->
+          </div>
+        </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <!-- Toggle icon to open the menu (for mobile) -->
+          <i class="ri-apps-2-add-line"></i>
+          <!-- RemixIcon toggle/menu icon -->
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!-- Main content area -->
+      <!--==================== HOME ====================-->
+      <section class="home">
+        <!-- Home section (404 error page) -->
+        <div class="h-container container">
+          <!-- Container for layout -->
+          <div class="h-data">
+            <!-- Text content section -->
+            <h3 class="h-subtitle">Unknown Zone</h3>
+            <!-- Subheading -->
+            <h1 class="h-title">ERROR 404</h1>
+            <!-- Main heading (404 error) -->
+
+            <p class="h-description">
+              We can't seem to find the page you're looking for, you need to
+              come back to earth.
+            </p>
+            <!-- Descriptive text for 404 message -->
+
+            <a href="#" class="h-button"> Return To Earth </a>
+            <!-- Button to return to home or another page -->
+          </div>
+
+          <div class="h-images">
+            <!-- Image section for decorative visuals -->
+            <div class="h-blob-1 h-blob">
+              <!-- Container for one image (spacecraft) -->
+              <img
+                src="/assets/img/spacecraft.png"
+                alt="Spacecraft Image"
+                class="h-img-1 h-img"
+              />
+            </div>
+
+            <div class="h-blob-2 h-blob">
+              <!-- Container for another image (planet 1) -->
+              <img
+                src="/assets/img/planet-1.png"
+                alt="Planet Image"
+                class="h-img-2 h-img"
+              />
+            </div>
+
+            <div class="h-blob-3 h-blob">
+              <!-- Container for another image (planet 2) -->
+              <img
+                src="/assets/img/planet-2.png"
+                alt="Planet Image"
+                class="h-img-3 h-img"
+              />
+            </div>
+
+            <div class="h-blob-4 h-blob">
+              <!-- Container for another image (astronaut) -->
+              <img
+                src="/assets/img/astronaut.png"
+                alt="Astronaut Image"
+                class="h-img-4 h-img"
+              />
+            </div>
+
+            <img src="/assets/img/ufo.png" alt="UFO Image" class="h-img-5" />
+            <!-- UFO image outside blobs -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== GSAP ===============-->
+    <script src="/assets/js/gsap.min.js"></script>
+    <!-- Loads GSAP animation library -->
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <!-- Loads custom JavaScript for interactivity -->
+  </body>
+</html>
