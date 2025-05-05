@@ -6,7 +6,7 @@ Welcome to the **Responsive 404 Page Website** project! 🌌 This is a modern, a
 
 ## 📸 Preview
 
-![404 Preview](#https://404-error-pagee.netlify.app/)  
+[404 Preview](https://404-error-pagee.netlify.app/)  
 
 ---
 
