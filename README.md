@@ -1,62 +1,65 @@
-# 🚀 Responsive 404 Error Page
+# 🌌 Responsive 404 Error Page
 
-Welcome to the **Responsive 404 Page Website** project! 🌌 This is a modern, animated, and fully responsive 404 error page built with **HTML**, **CSS**, **JavaScript**, and **GSAP animations**. It features a space-themed design with floating planets, a UFO, and an astronaut to delight users when they get lost on your site. 🛸
-
----
-
-## 📸 Preview
-
-[404 Preview](https://404-error-pagee.netlify.app/)  
+Welcome to the **Responsive 404 Page**!  
+A space-themed, modern 404 error page built with **HTML**, **CSS**, **JavaScript**, and **GSAP animations**.  
+Perfect for keeping your users engaged—even when they get lost.
 
 ---
 
-## 📁 Project Structure
+## 📸 **Preview**
+
+Check out the live demo of the 404 error page:  
+[**404 Preview**](https://404-error-pagee.netlify.app/)
+
+---
+
+## 📁 **Project Structure**
+
+Here’s an overview of the project structure:
 
 ```bash
 404-page/
-├── assets/ # (Optional) Reserved for additional assets if needed
+├── assets/                # (Optional) Reserved for additional assets
+│   ├── img/               # Images for the space theme
+│   │   ├── astronaut.png  # Astronaut image for the theme
+│   │   └── planet-1.png   # Planet image used in the background
 ├── css/
-  └── styles.css # Main CSS file for styling, layout, and responsive design
-├── img/
-  └── astronaut.png # Astronaut image for the 404 space theme
-  └── planet-1.png # Planet image used in the background
+│   └── styles.css         # Main CSS file for styling and responsive design
 ├── js/
-  └── main.js # JavaScript file for interactivity and animations
-├── index.html # Main HTML file – entry point for the 404 page
-  └── README.md # Project documentation and usage guide
+│   └── main.js            # JavaScript for interactivity and animations
+├── index.html             # Main HTML file – entry point for the 404 page
+└── README.md              # Project documentation and usage guide
 ```
-
----
 
 ## ✨ Features
 
-- 🎨 **Modern UI/UX** with floating space elements
+- 🎨 **Modern UI/UX** with dynamic floating space elements.
 
-- 📱 **Fully Responsive** across all screen sizes
+- 📱 **Fully responsive** design, optimized for all screen sizes.
 
-- 🧭 **Animated Navigation Menu** (mobile toggle support)
+- 🧭 **Animated navigation menu** with mobile toggle support.
 
-- 🧑‍🚀 **GSAP Animations** for engaging entrance effects
+- 🧑‍🚀 **GSAP animations** for high-performance, entrance effects.
 
-- 🌗 **Dynamic Header Shadow** on scroll
+- 🌗 **Dynamic header shadow** that changes on scroll.
 
-- 💥 Smooth mobile interactions and transitions
+- 💥 **Smooth transitions** and mobile-friendly interactions.
 
 ---
 
 ## 🌐 Technologies Used
 
-- **HTML5** – Semantic structure
+- **HTML5**: Semantic and accessible structure.
 
-- **CSS3** – Custom properties, grid/flexbox, media queries
+- **CSS3**: Custom properties, Grid, Flexbox, media queries.
 
-- **JavaScript** – Dynamic menu, scroll effects
+- **JavaScript**: Navigation toggles, scroll effects, and interactivity.
 
-- **GSAP (GreenSock)** – High-performance animations
+- **GSAP (GreenSock)**: For smooth, performance-based animations.
 
-- **RemixIcon** – Icon set for toggles
+- **RemixIcon**: For clean and scalable iconography.
 
-- **Google Fonts** – `Space Grotesk` typography
+- **Google Fonts**: `Space Grotesk` for futuristic typography.
 
 ---
 
@@ -79,80 +82,77 @@ Welcome to the **Responsive 404 Page Website** project! 🌌 This is a modern, a
 
 ## ✏️ Customize the Content
 
-- 📝 Update text in `index.html` to match your brand.
+- 📝 Edit `index.html` to match your brand or custom error message.
 
-- 🖼️ Swap out images in `assets/img/` if you'd like a different theme.
+- 🖼️ Replace images in `assets/img/` to change the visual theme.
 
-- 🎨 Modify animations or colors in `assets/css/styles.css`.
+- 🎨 Update animations, colors, or fonts in `assets/css/styles.css`.
 
 ---
 
 ## 🧪 Responsive Design
 
-This project is optimized for:
+Optimized for a full range of devices:
 
-- 📱 **Small phones** (under 320px)
+| Device               | Screen Range    |
+|----------------------|-----------------|
+| 📱 Small Phones       | < 320px         |
+| 📱 Mid Phones         | 400px – 700px   |
+| 💻 Tablets & Laptops  | ≥ 768px         |
+| 🖥️ Desktops           | ≥ 1150px        |
+| 📏 Tall Screens       | Height > 900px  |
 
-- 📱 **Mid-range phones** (400–700px)
-
-- 💻 **Tablets & Laptops** (768px+)
-
-- 🖥️ **Large desktops** (1150px+)
-
-- 📏 **Tall screens** (height > 900px)
-
-> Media queries adjust layout and blob scaling for smooth, adaptive viewing on all devices.
+> 📐 Media queries ensure smooth layout scaling and adaptive experience across all screen sizes.
 
 ---
 
 ## 🔮 Animations Included
 
-| **Element** | **Animation Type**       |
-| ----------- | ------------------------ |
-| `.h-img-1`  | Slide from top           |
-| `.h-img-2`  | Slide, rotate, and scale |
-| `.h-img-3`  | Rotate 360°              |
-| `.h-img-4`  | Drop and scale           |
-| `.h-img-5`  | Rise from bottom         |
-| `.h-blob-X` | Infinite morphing blob   |
+| Element      | Animation Type             |
+|--------------|-----------------------------|
+| `.h-img-1`   | Slide from top              |
+| `.h-img-2`   | Slide, rotate, and scale    |
+| `.h-img-3`   | Rotate 360°                 |
+| `.h-img-4`   | Drop and scale              |
+| `.h-img-5`   | Rise from bottom            |
+| `.h-blob-X`  | Infinite morphing blob      |
 
 ---
 
-## 📦 Dependencies
-
-This project uses the following external libraries via **CDN**:
+## 📦 Dependencies (via CDN)
 
 - 🎯 [**GSAP (GreenSock Animation Platform)**](https://greensock.com/gsap/)
 
 - 🧩 [**RemixIcon**](https://remixicon.com/)
 
-- ✒️ [**Google Fonts** – _Space Grotesk_](https://fonts.google.com/specimen/Space+Grotesk)
+- ✒️ [**Google Fonts – Space Grotesk**](https://fonts.google.com/specimen/Space+Grotesk)
 
-> No build tools or installations required.
+> 🚫 No installations or build tools required — just open the HTML file in your browser.
 
 ---
 
 ## ⚙️ Customization Tips
 
-- 🎨 Want a different theme? Replace images inside `/assets/img/`.
+- 🎨 Swap your own images into `/assets/img/`
 
-- 🌍 Add real navigation links to the header menu in `index.html`.
+- 🌍 Add real navigation links in `index.html` to integrate with your site
 
-- 🧠 Use your own error message and call-to-action text in `.h-description`.
+- 🧠 Personalize the error message and CTA text inside the `.h-description` section
 
 ---
 
 ## 🚧 Known Issues
 
-- None at the moment! 🧼  
-  If you find any bugs or want to request a feature, feel free to open an [issue](https://github.com/sudhanshu-j/404-page/issues).
+- ✅ No known issues currently  
+
+- 🛠️ If you find a bug or want to request a feature, [open an issue](https://github.com/sudhanshu-j/404-page/issues)
 
 ---
 
 ## 🙌 Credits
 
-Designed and developed by **[Your Name](https://github.com/sudhanshu-j)** 💙  
-Thanks to open-source tools:
+Developed by **[Your Name](https://github.com/sudhanshu-j)** 💙  
+Thanks to the following open-source tools:
 
 - [GSAP](https://greensock.com/gsap/)
 
@@ -166,12 +166,14 @@ Thanks to open-source tools:
 
 If you like this project:
 
-- ⭐ Star this repo
+- ⭐ Star the repository  
 
-- 🍴 Fork it
+- 🍴 Fork it and build your own version  
 
-- 🛠️ Submit a PR
+- 🛠️ Submit a pull request  
 
-- 📬 Follow me for more front-end fun!
+- 📬 Follow me for more front-end projects
 
-> Happy coding! 🚀
+---
+
+> **Happy Coding!** 🚀
