@@ -6,7 +6,7 @@ Welcome to the **Responsive 404 Page Website** project! 🌌 This is a modern, a
 
 ## 📸 Preview
 
-![404 Preview](assets/img/preview.png)  
+![404 Preview](#https://404-error-pagee.netlify.app/)  
 
 ---
 
@@ -64,7 +64,7 @@ Welcome to the **Responsive 404 Page Website** project! 🌌 This is a modern, a
 
 1. **Clone this repository**:
    ```bash
-   git clone https://github.com/yourusername/404-page.git
+   git clone https://github.com/sudhanshu-j/404-page.git
    cd 404-page
    ```
 
@@ -145,13 +145,13 @@ This project uses the following external libraries via **CDN**:
 ## 🚧 Known Issues
 
 - None at the moment! 🧼  
-  If you find any bugs or want to request a feature, feel free to open an [issue](https://github.com/yourusername/404-page/issues).
+  If you find any bugs or want to request a feature, feel free to open an [issue](https://github.com/sudhanshu-j/404-page/issues).
 
 ---
 
 ## 🙌 Credits
 
-Designed and developed by **[Your Name](https://github.com/yourusername)** 💙  
+Designed and developed by **[Your Name](https://github.com/sudhanshu-j)** 💙  
 Thanks to open-source tools:
 
 - [GSAP](https://greensock.com/gsap/)
@@ -175,4 +175,3 @@ If you like this project:
 - 📬 Follow me for more front-end fun!
 
 > Happy coding! 🚀
-# 404-page
